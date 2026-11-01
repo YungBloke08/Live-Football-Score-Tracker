@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Football Scores</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="top">
+  <header>
+    <button id="prev" aria-label="Previous day">&#8249;</button>
+    <div class="datebox">
+      <div id="dateLabel">Today</div>
+      <input type="date" id="datePicker" aria-label="Pick a date">
+    </div>
+    <button id="next" aria-label="Next day">&#8250;</button>
+    <button id="bell" aria-label="Premier League goal alerts" title="Premier League goal alerts">&#128276;</button>
+    <button id="refresh" aria-label="Refresh" title="Refresh">&#8635;</button>
+  </header>
+  <nav id="tabs" role="tablist">
+    <button role="tab" data-tab="epl" class="active">Premier League</button>
+    <button role="tab" data-tab="other">La Liga · Bundesliga · Serie A · Ligue 1</button>
+    <button role="tab" data-tab="europe">Europe</button>
+  </nav>
+  </div>
+  <main id="content"><p class="msg">Loading scores…</p></main>
+  <script src="popup.js"></script>
+</body>
+</html>

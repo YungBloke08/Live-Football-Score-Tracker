@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Football Scores",
+  "version": "1.2.0",
+  "description": "Live scores for the Premier League, La Liga, Bundesliga, Serie A, Ligue 1 and UEFA competitions, with goals, cards and substitutions.",
+  "icons": { "128": "icon128.png" },
+  "permissions": ["alarms", "notifications", "storage"],
+  "background": { "service_worker": "background.js" },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Football Scores"
+  },
+  "host_permissions": ["https://site.api.espn.com/*"]
+}
